@@ -1,0 +1,13 @@
+name: Receive-inputs
+
+on: [ workflow_dispatch ]
+
+jobs:
+  deploy:
+    name: Print Inputs
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+    
