@@ -1,6 +1,11 @@
 name: Receive-inputs
 
-on: [ workflow_dispatch ]
+on: 
+  workflow_dispatch:
+    inputs:
+      mario:
+        description: 'mario'     
+        required: true
 
 jobs:
   deploy:
