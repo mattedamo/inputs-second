@@ -6,6 +6,9 @@ on:
       mario:
         description: 'mario'     
         required: true
+      sha:
+        descrption: 'sha'
+        required: true
 
 jobs:
   deploy:
@@ -14,4 +17,5 @@ jobs:
     steps:
       - run: |
           echo "Input mario: ${{ github.event.inputs.mario }}" 
+          echo "Input sha: ${{ github.event.inputs.sha }}" 
     
